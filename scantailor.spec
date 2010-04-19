@@ -1,9 +1,9 @@
-Name:    scantailor
-Version: 0.9.7.2
-Release: %mkrel 1
-Summary: Scan processing software
-License: GPLv3
-Group:   Graphics
+Name:		scantailor
+Version:	0.9.8
+Release:	%mkrel 1
+Summary:	Scan processing software
+License:	GPLv3
+Group:		Graphics
 Url:           http://scantailor.sf.net
 Source:        %{name}-%{version}.tar.gz
 Source1:       %{name}.desktop

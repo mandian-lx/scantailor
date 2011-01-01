@@ -51,4 +51,3 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}/translations/*
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/%{name}.svg
-

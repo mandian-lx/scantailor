@@ -1,0 +1,8 @@
+[Desktop Entry]
+GenericName=ScanTailor
+Name=ScanTailor
+Exec=scantailor
+Type=Application
+Icon=scantailor
+Terminal=false
+Categories=Graphics;RasterGraphics;

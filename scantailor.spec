@@ -1,6 +1,6 @@
 Name:		scantailor
 Version:	0.9.11.1
-Release:	%mkrel 1
+Release:	2
 Summary:	Scan processing software
 License:	GPLv3+
 Group:		Graphics

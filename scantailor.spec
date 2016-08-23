@@ -38,7 +38,7 @@ project.
 %{_bindir}/%{name}
 %{_bindir}/%{name}-cli
 %{_datadir}/%{name}/
-%{_datadir}/applications/%{vendor}-%{name}.desktop
+%{_datadir}/applications/%{product}-%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/%{name}.png
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/pixmaps/%{name}.xpm
@@ -61,7 +61,7 @@ Icon=%{name}
 Terminal=false
 Type=Application
 StartupNotify=false
-Categories=Office;Graphics;RasterGraphics;
+Categories=Office;Graphics;Scanning;RasterGraphics;
 X-Vendor=%{vendor}
 EOF
 
@@ -92,7 +92,7 @@ install -pm 0644 resources/appicon.svg \
 install -dm 0755 %{buildroot}%{_datadir}/applications/
 desktop-file-install \
 	--dir %{buildroot}%{_datadir}/applications \
-	openmandriva-%{name}.desktop
+	%{product}-%{name}.desktop
 
 # locales
 %find_lang %{name} --with-qt

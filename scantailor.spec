@@ -37,7 +37,7 @@ project.
 %files -f %{name}.lang
 %{_bindir}/%{name}
 %{_bindir}/%{name}-cli
-%{_datadir}/applications/%{vendor}-%{name}.desktop
+%{_datadir}/applications/%{product}-%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/%{name}.png
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/pixmaps/%{name}.xpm
@@ -50,7 +50,7 @@ project.
 %setup -q -n %{name}-RELEASE_%{ver}
 
 # .desktop
-cat > %{vendor}-%{name}.desktop << EOF
+cat > %{product}-%{name}.desktop << EOF
 [Desktop Entry]
 Name=%{name}
 GenericName="Scan Tailor"
@@ -61,7 +61,7 @@ Terminal=false
 Type=Application
 StartupNotify=false
 Categories=Office;Graphics;Scanning;RasterGraphics;
-X-Vendor=%{vendor}
+X-Vendor=%{product}
 EOF
 
 %build
@@ -91,7 +91,7 @@ install -pm 0644 resources/appicon.svg \
 install -dm 0755 %{buildroot}%{_datadir}/applications/
 desktop-file-install \
 	--dir %{buildroot}%{_datadir}/applications \
-	%{vendor}-%{name}.desktop
+	%{product}-%{name}.desktop
 
 # locales
 %find_lang %{name} --with-qt

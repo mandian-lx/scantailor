@@ -37,8 +37,6 @@ project.
 %files -f %{name}.lang
 %{_bindir}/%{name}
 %{_bindir}/%{name}-cli
-%dir %{_datadir}/%{name}/
-%dir %{_datadir}/%{name}/translations
 %{_datadir}/applications/%{product}-%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/%{name}.png
 %{_iconsdir}/hicolor/scalable/apps/%{name}.svg
